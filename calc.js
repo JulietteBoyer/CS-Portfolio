@@ -28,12 +28,12 @@ function doMath() {
         display.innerHTML = answer;
     }
     
-    if (dropdown.value == "^"){
+    if (dropdown.value == "^ (to the power of)"){
         answer = Math.pow(parseInt(input1.value) , parseInt(input2.value));
         display.innerHTML = answer;
     } 
     
-    if  (dropdown.value == ","){
+    if  (dropdown.value == ", (square root)"){
         answer = Math.pow(parseInt(input1.value) , 1/parseInt(input2.value));
         display.innerHTML = answer
     }

@@ -1,24 +1,61 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <style>
+        body{
+            background-color: rgb(163, 229, 236);
+            border: 5px solid rgb(91, 54, 212);
+            padding: 25px;
+        }
+        
+        #input1{
+            color: black;
+        }
+        
+        #input2{
+            color: black;
+        }
+        
+        #display{
+            color: black;
+        }
+        
+        h1{
+            margin-right: 75%;
+            color: purple;
+            border: 3px solid;
+            padding:5px;
+            background-color: rgb(20, 158, 174);
+        }
+        
+        #calculatorimage{
+            position: absolute;
+            width: 100px;
+            margin-left: 30%;
+            margin-top: 20px;
+        }
+    </style>
+    
 	<link rel="stylesheet" type="text/css" href="index.css">
 	<title>Document</title>
 </head>
-<body>
+<body><img id="calculatorimage" src="http://content.mycutegraphics.com/graphics/school/cartoon-calculator.png">
+    <h1><stong>Online Calculator</stong></h1>
     
-<input type ="text" name="input1" style="width:50px;" id="input1">
-    <select id="dropdown">
+<input type ="text" name="input1" style="width:70px; background-color: rgb(20, 158, 174); border:2px solid purple;" id="input1">
+    <select id="dropdown" style="width:40px; border: 3px solid purple; background-color: rgb(20, 158, 174);">
         <option value="+">+</option>
         <option value="-">-</option>
         <option value="x">x</option>
         <option value="/">/</option>
-        <option value="^">^</option>
-        <option value=",">,</option>
+        <option value="^ (to the power of)">^ (to the power of)</option>
+        <option value=", (square root)">, (square root)</option>
     </select>
-    <input type ="text" name="input2" style="width:50px;" id="input2">
-    <input type="button" value="Calculate" id="submitButton" />
+    <input type ="text" name="input2" style="width:70px; border:2px solid purple; background-color: rgb(20, 158, 174);" id="input2">
+    <input type="button" value="Calculate" id="submitButton" style="width:70px; border: 2px solid purple; background-color:rgb(20, 158, 174);" />
 
     <p>The answer is: <span id="display"></span></p>
+
 <script src="calc.js" ></script>
 
 </body>
