@@ -16,6 +16,30 @@
                 margin-left: 50px;
                 margin-right: 50px;
                 margin-top: 450px;
+                font-size: 1.55em;
+                text-indent: 2em;
+            
+            }
+            
+            h3 {
+                margin-left: 50%;
+                margin-right: 50px;
+                font-size: 1.55em;
+                text-indent: 2em;
+            }
+            
+            h4 {
+                margin-left: 50%;
+                margin-right: 50px;
+                font-size: 1.55em;
+                text-indent: 2em;
+            }
+            
+            h5 {
+                margin-left: 50%;
+                margin-right: 50px;
+                font-size: 1.55em;
+                text-indent: 2em;
             }
             
         </style>
@@ -25,11 +49,23 @@
         
     <h1 style="text-align:center;"> <strong>Venturesome Vindinium</strong> </h1>
     
-    <h2>Vindinium is a multi-player online game with a goal of collecting the most gold by the end of the game. To get gold, players must conquer gold mines which are guarded and owned by goblins. To get past theses goblins, players must attack and defeat them. Once they have defeated the goblins, the gold mines are under their ownership. Gold mines produce gold for their owners. Players can also attack one another. The victor of this fight gets control over their opponent’s gold mines while the loser keeps all his gold but loses his gold mine. 
+    <h2>Vindinium is a multi-player online game with a goal of collecting the most gold by the end of the game. To get gold, players must conquer gold mines which are guarded and owned by goblins. To get past theses goblins, players must attack and defeat them. Once they have defeated the goblins, the gold mines are under their ownership. Gold mines produce gold for their owners. Players can also attack one another. The victor of this fight gets control over their opponent's gold mines while the loser keeps all his gold but loses his gold mine. A lot of code is involved in making your player be the best it can be.  
 
  </h2>
     
     <img style="position:absolute; top:100px; width:375px; margin-left:33%" id="vindinium.map" src="https://s3.amazonaws.com/poly-screenshots.angel.co/Project/a0/120663/73d89cbf74dde0cacf22233ec6dc6a79-original.png"></img>
+    
+    <img style="position: absolute; top: 900px; margin-right: 50%; width: 500px;" src="images/Screenshot 2016-03-31 at 1.12.29 PM.png"></img>
+    
+    <img style="position: absolute; top: 1410px; width: 500px;" src="images/Screenshot 2016-03-31 at 1.59.11 PM.png"></img>
+    
+    <img style="position: absolute; top: 2000px; width: 500px;" src="images/Screenshot 2016-03-31 at 2.11.42 PM.png"></img>
+    
+    <h3>The first section of code to this game is the global data. This is where you create or determine any information for your bot to know. This section is like the brain of your bot. It introduces your bot to things that it will need to know to win the game, such as enemy bots, gold mines, and enemy gold mines. The code I put in this section finds the distance between my bot and the closest enemy bot. To do this I used the bot.findDistance(arr1, arr2). This code finds the distance between two bots. I used myPos to determine the distance between my bot and other bots. I also did it this way so that my bot could find the x,y coordinates of other bots. </h3>
+    
+    <h4>The next section of code to this game is the code that decides WHAT to do. This section is like the bot's brain telling the bot's body what to do to survive. If you wanted to tell your bot to attack an enemy bot with low health or to go to a tavern when in need of more health, this is where you would put the code for those actions. In this section, I put the code that tells my bot to go to a tavern when it's health is 50 or less. I thought this would help my bot survive longer because it would make it less likely for my bot to run out of health before the game was over. I also put code that tells the bot attack bots with the most mines and with the lowest health. I thought this would make it more likely for my bot to gain mines and gold.</h4>
+    
+    <h5>The next and final section of code to this game is the code that decides HOW to carry out actions. This code is like the bot's brain telling the bot how to carry out actions it had previously been told to do. If you wanted your bot to go to a tavern or attack another bot, your bot would not automatically know how to do this, just like if you were to give a student a math problem he had never faced before. You would have to provide instructions and tell the bot or the student how to complete these actions. In this section, I used code that includes the instructions for how to find different objects in the game, like taverns and other bots. I used the bot.findDistance code again to do this. This code determines where these different objects are. The next piece of code I used told the bot to move to these objects and to either attack them, if they were bots, or gain health, if it was a tavern. </h5>
     
     </body>
     
