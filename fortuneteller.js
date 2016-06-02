@@ -1,8 +1,11 @@
-var item1 = document.getElementById("myFortune");
-var info1 = document.getElementById("info1");
+var fortunebutton = document.getElementById("myfortune");
+var fortunetext = document.getElementById("info1");
+var fortunetext2 = document.getElementById("info2");
 
-item1.addEventListener("click", function(){
-    info1.innerHTML = "<p style='margin-left:50%; id='myFortune' > You will overcome adversity and furthermore live a successful, productive life full of satisfaction!</p>";
+fortunebutton.addEventListener("click", function(){
     
+    fortunetext.innerHTML = "<p style='margin-left: 500px; font-size: 1.75em; text-indent: 2em' id='1dinfo' > You will overcome certain obstacles and live a successful, productive life full of satisfaction.</p>";
+    fortunetext2.innerHTML = "<p style='margin-left:20%; margin-top:40px' id='1dinfo2' >  </p>";
 });
-                      
+
+             
